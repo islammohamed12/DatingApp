@@ -1,0 +1,58 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "explorer.confirmDelete": false,
+    "editor.formatOnType": true,
+    "java.semanticHighlighting.enabled": true,
+    "java.requirements.JDK11Warning": false,
+    "java.project.importHint": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "none",
+    "debug.console.fontSize": 20,
+    "workbench.editor.enablePreview": false,
+    "sonarlint.rules": {
+        "javascript:S1516": {
+            "level": "off"
+        },
+        "javascript:S1125": {
+            "level": "off"
+        },
+        "javascript:S4138": {
+            "level": "off"
+        },
+        "javascript:S1488": {
+            "level": "off"
+        }
+    },
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "redhat.telemetry.enabled": true,
+    "editor.fontSize": 17,
+    "editor.fontWeight": "normal",
+    "screencastMode.fontSize": 20,
+    "screencastMode.verticalOffset": 2,
+    "screencastMode.mouseIndicatorSize": 56,
+    "workbench.preferredHighContrastColorTheme": "Default Dark+",
+    "workbench.iconTheme": "material-icon-theme",
+    "omnisharp.useGlobalMono": "never",
+    "workbench.colorTheme": "Default Light+",
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true
+    }
+}
