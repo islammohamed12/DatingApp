@@ -10,7 +10,7 @@ import { AccountService } from './_services/account.service';
 })
 export class AppComponent implements OnInit {
   title = 'The Dating App';
-  users: any;
+
   constructor(
     private http: HttpClient,
     private accountService: AccountService
@@ -26,19 +26,6 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-    this.getUsers();
     this.setCurrentUser();
-  }
-
-  getUsers() {
-    // throw new Error('Method not implemented.');
-    this.http.get('https://localhost:5001/api/users').subscribe(
-      (response) => {
-        this.users = response;
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
   }
 }
