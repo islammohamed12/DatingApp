@@ -14,7 +14,7 @@ export class NavComponent implements OnInit {
 
   currentUser$: Observable<User | null>;
 
-  constructor(private accountService: AccountService) {}
+  constructor(public accountService: AccountService) {}
 
   ngOnInit(): void {
     // this.getCurrentUser();

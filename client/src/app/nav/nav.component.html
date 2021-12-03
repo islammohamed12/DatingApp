@@ -4,8 +4,7 @@
       >Dating App</a
     >
 
-    <ul class="navbar-nav me-auto" *ngIf="currentUser$ | async">
-      <!-- <ng-container *ngIf="accountService.currentUser$ | async"> -->
+    <ul class="navbar-nav me-auto" *ngIf="accountService.currentUser$ | async">
       <li class="nav-item">
         <a class="nav-link" routerLink="/members" routerLinkActive="active"
           >Matches</a
@@ -33,7 +32,7 @@
         <a class="nav-link" (click)="logout()" href="#">Logout</a>
       </li>
     </ul>
-    <div class="dropdown" *ngIf="currentUser$ | async" dropdown>
+    <div class="dropdown" *ngIf="accountService.currentUser$ | async" dropdown>
       <a class="dropdown-toggle text-light" dropdownToggle>Welcome user</a>
       <div class="dropdown-menu mt-3" *dropdownMenu>
         <a class="dropdown-item" (click)="logout()">Edit Profile</a>
@@ -47,7 +46,7 @@
       class="d-flex mt-2 mt-md-0"
       (ngSubmit)="login()"
       autocomplete="off"
-      *ngIf="!(currentUser$ | async)"
+      *ngIf="!(accountService.currentUser$ | async)"
     >
       <input
         name="username"
