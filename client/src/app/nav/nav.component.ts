@@ -29,18 +29,26 @@ export class NavComponent implements OnInit {
 
   login(): void {
     console.log(this.model);
-    this.accountService.login(this.model).subscribe(
-      (response) => {
-        console.log(response);
-        // this.loggedIn = true;
-        this.router.navigateByUrl('/members');
-      },
-      (error) => {
-        console.log(error);
-        this.toastr.error(error.error);
-         
-      }
-    );
+    // this.accountService.login(this.model).subscribe(
+    //   (response) => {
+    //     console.log(response);
+    //     // this.loggedIn = true;
+    //     this.router.navigateByUrl('/members');
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //     this.toastr.error(error.error);
+
+    //   }
+    // );
+
+    //no need to handle the error like above code , handled in the interceptors
+
+    this.accountService.login(this.model).subscribe((response) => {
+      console.log(response);
+      // this.loggedIn = true;
+      this.router.navigateByUrl('/members');
+    });
   }
   logout(): void {
     this.accountService.logout();
